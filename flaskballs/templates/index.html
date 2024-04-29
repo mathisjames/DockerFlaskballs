@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- meta information -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- bootstrap css with cdn -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- webpage title -->
+	<title>Flaskballs demo</title>
+
+	<style>
+		canvas {
+			max-width: 100%; /* Make the canvas fill its container */
+			height: auto; /* Maintain aspect ratio */
+			max-height: 800px; /* Limit maximum height to 800px */
+			border: 1px solid black; /* Optional border for visualization */
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow to the canvas */
+		}
+	</style>
+	
+</head>
+
+<!-- execute javascript function on page startup -->
+<body onload="flaskballs()"> 
+
+<!-- apply our CSS to webpage -->
+<div class="container">
+
+	<div class="row">
+	  <div class="col">
+
+	    <!-- simple header of flaskballs -->
+	    <h1><u>FLASKBALLS DOCKERIZED</u></center></h1>
+
+	    <!-- setup our canvas for flaskball -->
+		<canvas id="myCanvas" width="800" height="800"></canvas>
+	  </div>
+	</div>
+</div>
+        <!-- javascript -->
+        <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>
+
